@@ -7,3 +7,8 @@
 	--additional-text-color: #ffffff;
 	--button-no-active-color: #afb1b8;
 }
+
+body {
+	font-family: var(--main-font), sans-serif;
+	color: var(--primary-text-color);
+}
