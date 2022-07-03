@@ -21,22 +21,28 @@
 
     <header class="header">
         <div class="container">
-            <a class="logo link" href="index.html"><span class="logo-bracket">Web</span>Studio</a>
-            <nav class="header-nav">
-                <ul class="header-list list">
-                    <li class="header-item"><a class="link current" href="index.html" target="_self">Студия</a></li>
-                    <li class="header-item"><a class="link" href="portfolio.html" target="_self">Портфолио</a></li>
-                    <li class="header-item"><a class="link" href="">Контакты</a></li>
+            <a class="logo link" href="index.html"><span class="logo__bracket">Web</span>Studio</a>
+            <nav class="menu">
+                <ul class="menu__list list">
+                    <li class="menu__item">
+                        <a class="menu__link link current" href="index.html" target="_self">Студия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="portfolio.html" target="_self">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="">Контакты</a>
+                    </li>
                 </ul>
             </nav>
             <ul class="contacts list">
-                <li><a class="link" href="mailto:info@devstudio.com">
-                        <svg width="16" height="12" class="contacts-icon">
+                <li><a class="contacts__item link" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12" class="contacts__icon">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a></li>
-                <li class="header-tel"><a class="link" href="tel:+380961111111">
-                        <svg width="10" height="12" class="contacts-icon">
+                <li class="contacts__item"><a class="link" href="tel:+380961111111">
+                        <svg width="10" height="12" class="contacts__icon">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
@@ -47,8 +53,8 @@
         <section class="hero">
 
             <div class="container">
-                <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+                <h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
+                <button class="button" type="button" data-modal-open>Заказать услугу</button>
 
             </div>
         </section>
@@ -56,66 +62,67 @@
         <section class="section">
             <div class="container">
 
-                <div class="features">
+                <div class="benefits">
                     <h2 class="visually-hidden">Наши достоинства</h2>
-                    <ul class="hero-benefits list">
-                        <li class="benefits-item">
-                            <div class="benefits-graphic">
+                    <ul class="benefits__list list">
+                        <li class="benefits__item">
+                            <div class="benefits__graphic">
                                 <svg height="70" width="70">
                                     <use href="./images/icons.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="benefits-accent">Внимание к деталям</h3>
-                            <p class="benefits-about">Идейные соображения, а также начало повседневной работы по
+                            <h3 class="benefits__accent">Внимание к деталям</h3>
+                            <p class="benefits__about">Идейные соображения, а также начало повседневной работы по
                                 формированию позиции.</p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="benefits-graphic">
+                        <li class="benefits__item">
+                            <div class="benefits__graphic">
                                 <svg height="70" width="70">
                                     <use href="./images/icons.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="benefits-accent">Пунктуальность</h3>
-                            <p class="benefits-about">Задача организации, в особенности же рамки и место обучения кадров
+                            <h3 class="benefits__accent">Пунктуальность</h3>
+                            <p class="benefits__about">Задача организации, в особенности же рамки и место обучения
+                                кадров
                                 влечет за собой.</p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="benefits-graphic">
+                        <li class="benefits__item">
+                            <div class="benefits__graphic">
                                 <svg height="70" width="70">
                                     <use href="./images/icons.svg#icon-diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="benefits-accent">Планирование</h3>
-                            <p class="benefits-about">Равным образом консультация с широким активом в значительной
+                            <h3 class="benefits__accent">Планирование</h3>
+                            <p class="benefits__about">Равным образом консультация с широким активом в значительной
                                 степени обуславливает.</p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="benefits-graphic">
+                        <li class="benefits__item">
+                            <div class="benefits__graphic">
                                 <svg height="70" width="70">
                                     <use href="./images/icons.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="benefits-accent">Современные технологии</h3>
-                            <p class="benefits-about">Значимость этих проблем настолько очевидна, что реализация
+                            <h3 class="benefits__accent">Современные технологии</h3>
+                            <p class="benefits__about">Значимость этих проблем настолько очевидна, что реализация
                                 плановых заданий.</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="works">
-                    <h2 class="we-doing">Чем мы занимаемся</h2>
-                    <ul class="list">
-                        <li class="we-doing-item">
+                    <h2 class="works__header">Чем мы занимаемся</h2>
+                    <ul class="works__list list">
+                        <li class="works__item">
                             <img src="images/index/box_1.jpg" alt="Разработка" width="370">
-                            <p class="we-doing-text">Десктопные приложения</p>
+                            <p class="works__discription">Десктопные приложения</p>
                         </li>
-                        <li class="we-doing-item">
+                        <li class="works__item">
                             <img src="images/index/box_2.jpg" alt="Тестирование" width="370">
-                            <p class="we-doing-text">Мобильные приложения</p>
+                            <p class="works__discription">Мобильные приложения</p>
                         </li>
-                        <li class="we-doing-item">
+                        <li class="works__item">
                             <img src="images/index/box_3.jpg" alt="Дизайн" width="370">
-                            <p class="we-doing-text">Дизайнерские решения</p>
+                            <p class="works__discription">Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
@@ -344,11 +351,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="contact-box">
-                <a class="footer-logo link" href="index.html"><span class="logo-bracket">Web</span>Studio</a>
-                <address class="address">
+    <footer>
+        <div class="footer container">
+            <div class="footer__contacts">
+                <a class="footer__logo link" href="index.html"><span class="logo__bracket">Web</span>Studio</a>
+                <address class="footer__address">
                     <a class="link" href="https://goo.gl/maps/Ysp8wWhHFBnGZ7G2A" target="_blank"
                         rel="noopener noreferrer">г.
                         Киев, пр-т

@@ -1,6 +1,6 @@
 /*---------WE DOING----------*/
 
-.we-doing {
+.works__header {
 	margin-bottom: 50px;
 	font-size: 36px;
 	line-height: 1.17;
@@ -9,18 +9,18 @@
 	color: var(--primary-text-color);
 }
 
-.we-doing + .list {
+.works__list {
 	display: flex;
 	margin: -15px;
 }
 
-.we-doing-item {
+.works__item {
 	flex-basis: calc(100% / 3 - 30px);
 	margin: 15px;
 	position: relative;
 }
 
-.we-doing-text {
+.works__discription {
 	position: absolute;
 	transform: translateY(-100%);
 

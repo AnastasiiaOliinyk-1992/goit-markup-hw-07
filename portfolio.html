@@ -20,39 +20,45 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo link" href="index.html"><span class="logo-bracket">Web</span>Studio</a>
-            <nav class="header-nav">
-                <ul class="header-list list">
-                    <li class="header-item"><a class="link" href="index.html" target="_self">Студия</a></li>
-                    <li class="header-item"><a class="link current" href="portfolio.html" target="_self">Портфолио</a>
+            <a class="logo link" href="index.html"><span class="logo__bracket">Web</span>Studio</a>
+            <nav class="menu">
+                <ul class="menu__list list">
+                    <li class="menu__item">
+                        <a class="menu__link link current" href="index.html" target="_self">Студия</a>
                     </li>
-                    <li class="header-item"><a class="link" href="">Контакты</a></li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="portfolio.html" target="_self">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="">Контакты</a>
+                    </li>
                 </ul>
             </nav>
             <ul class="contacts list">
-                <li><a class="link" href="mailto:info@devstudio.com">
-                        <svg width="16" height="12" class="contacts-icon">
+                <li><a class="contacts__item link" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12" class="contacts__icon">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a></li>
-                <li class="header-tel"><a class="link" href="tel:+380961111111">
-                        <svg width="10" height="12" class="contacts-icon">
+                <li class="contacts__item"><a class="link" href="tel:+380961111111">
+                        <svg width="10" height="12" class="contacts__icon">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
+
     <main>
         <section class="section">
             <div class="container">
                 <h1 class="visually-hidden">Фильтр</h1>
 
                 <ul class="filtr list">
-                    <li class="filtr-btn"><button type="button" class="button">Все</button></li>
-                    <li class="filtr-btn"><button type="button" class="button">Веб-сайты</button></li>
-                    <li class="filtr-btn"><button type="button" class="button">Приложения</button></li>
-                    <li class="filtr-btn"><button type="button" class="button">Дизайн</button></li>
-                    <li class="filtr-btn"><button type="button" class="button">Маркетинг</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Все</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Веб-сайты</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Приложения</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Дизайн</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Маркетинг</button></li>
                 </ul>
 
 
@@ -200,11 +206,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="contact-box">
-                <a class="footer-logo link" href="index.html"><span class="logo-bracket">Web</span>Studio</a>
-                <address class="address">
+    <footer>
+        <div class="footer container">
+            <div class="footer__contacts">
+                <a class="footer__logo link" href="index.html"><span class="logo__bracket">Web</span>Studio</a>
+                <address class="footer__address">
                     <a class="link" href="https://goo.gl/maps/Ysp8wWhHFBnGZ7G2A" target="_blank"
                         rel="noopener noreferrer">г.
                         Киев, пр-т
@@ -256,7 +262,7 @@
                 </p>
                 <form class="subscribe-form">
                     <!-- <label for="user-email">Email</label> -->
-                    <input placeholder="E-mail" type="email" name="email" id="user-email" class="subscribe-input" />
+                    <input placeholder="E-mail" type="email" name="email" id="email" class="subscribe-input" />
                     <button type="submit" class="subscribe-btn">Подписаться</button>
                     <svg class="footer-send-ico">
                         <use href="./images/icons.svg#icon-send"></use>

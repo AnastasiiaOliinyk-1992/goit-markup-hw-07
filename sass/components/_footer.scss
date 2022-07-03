@@ -5,26 +5,41 @@
 	color: var(--additional-text-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
-}
 
-.contact-box {
-	margin-right: 70px;
-}
-
-.footer > .container {
 	display: flex;
 	align-items: baseline;
 }
 
-.footer-logo {
-	font-family: "Raleway", sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	color: var(--additional-text-color);
+.footer__contacts {
+	margin-right: 70px;
 }
 
-.address {
+// .footer-logo {
+// 	font-family: "Raleway", sans-serif;
+// 	font-weight: 700;
+// 	font-size: 26px;
+// 	line-height: 1.19;
+// 	color: var(--additional-text-color);
+// }
+
+.footer__address {
+	.link {
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		color: var(--additional-text-color);
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+	}
+
 	margin-top: 20px;
 	font-style: normal;
 	font-size: 14px;
@@ -32,30 +47,33 @@
 	letter-spacing: 0.03em;
 }
 
-.address .link {
+.footer {
+	.contacts {
+		flex-direction: column;
+	}
+}
+
+.contacts-item {
+	&:not(first-child) {
+		margin-top: 9px;
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-	color: var(--additional-text-color);
+	display: flex;
+	align-items: center;
+	color: var(--secondary-text-color);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-}
-
-.address .link:focus,
-.address .link:hover {
-	color: var(--accent-color);
-}
-
-.footer .contacts {
-	margin-top: 9px;
-	flex-direction: column;
-}
-
-.contacts-item:not(:first-child) {
-	margin-top: 9px;
 }
 
 /*------------FOOTER JOIN-----------*/
@@ -75,15 +93,20 @@
 }
 
 .join-item {
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
+
 	width: 44px;
 	height: 44px;
 }
 
-.join-item:not(:first-child) {
-	margin-left: 10px;
-}
-
 .join-link {
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+	}
+
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,11 +118,6 @@
 	height: 100%;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-}
-
-.join-link:hover,
-.join-link:focus {
-	background-color: var(--accent-color);
 }
 
 .join-ico {
