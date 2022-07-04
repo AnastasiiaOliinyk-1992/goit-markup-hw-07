@@ -150,11 +150,11 @@ body {
 .footer {
   background-color: #2f303a;
   color: var(--additional-text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__wraper {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
