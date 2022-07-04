@@ -58,6 +58,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: -15px;
+	// gap: 30px;
 }
 
 .portfolio-item {
@@ -84,7 +85,7 @@
 
 .portfolio-wrap {
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .portfolio-text {
